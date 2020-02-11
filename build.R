@@ -44,5 +44,4 @@ writeLines(index, 'index.Rmd')
 
 rmarkdown::render(
   input='index.Rmd',
-  output_format='html_document',
   output_file='index.html')
