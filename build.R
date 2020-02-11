@@ -1,3 +1,4 @@
+# rm(list = ls())
 
 local({
   # set a stable mirror
@@ -9,28 +10,25 @@ local({
 if ( ! require(rmarkdown))
   install.packages('rmarkdown')
 
+if ( ! require(revealjs))
+  install.packages("revealjs")
+
+
 Rmds <- list.files(pattern='.*\\.Rmd')
 
+#Rmd = Rmds[1]
 for (Rmd in Rmds) {
   match <- regexec('^(.*)\\.Rmd$', Rmd)
   name <- substring(Rmd, 1, nchar(Rmd)-4)
-  output_q <- paste(name, 'Q.html')
-  output_s <- paste(name, 'S.html')
+  output_L <- paste(name, '_Lecture.html',sep="")
 
   rmarkdown::render(
     input=Rmd,
-    output_format='html_document',
-    output_file=output_q,
-    params=list(inc_solu=FALSE))
+    output_file=output_L)
 
-  rmarkdown::render(
-    input=Rmd,
-    output_format='html_document',
-    output_file=output_s,
-    params=list(inc_solu=TRUE))
 }
 
-files <- list.files(pattern='Lab*.*')
+files <- list.files(pattern='Lecture.html*.*')
 files <- c(files, 'all.zip')
 links <- sapply(files, function(x) paste0(' - [', x, '](', URLencode(x), ')'))
 
