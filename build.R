@@ -31,7 +31,7 @@ for (Rmd in Rmds) {
 
 }
 
-if(1==0){
+if(1==1){
   files <- list.files(pattern='Lecture.html*.*')
   files <- c(files, 'all.zip')
   links <- sapply(files, function(x) paste0(' - [', x, '](', URLencode(x), ')'))
