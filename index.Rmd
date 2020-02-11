@@ -1,6 +1,0 @@
-# index
-
- - [all.zip](all.zip)
- - [index_Lecture.html](index_Lecture.html)
- - [Week_1_Lecture.html](Week_1_Lecture.html)
- - [Week_2_Lecture.html](Week_2_Lecture.html)
