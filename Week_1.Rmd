@@ -4,7 +4,7 @@ author: Glen Livingston Jr
 date: Semester 1, 2020
 output: 
   revealjs::revealjs_presentation:
-#    self_contained: false
+    self_contained: false
 #    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
 #    reveal_options:
 #      chalkboard: 
