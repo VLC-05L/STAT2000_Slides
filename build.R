@@ -30,19 +30,23 @@ for (Rmd in Rmds) {
 
 }
 
-files <- list.files(pattern='Lecture.html*.*')
-files <- c(files, 'all.zip')
-links <- sapply(files, function(x) paste0(' - [', x, '](', URLencode(x), ')'))
+if(1==0){
+  files <- list.files(pattern='Lecture.html*.*')
+  files <- c(files, 'all.zip')
+  links <- sapply(files, function(x) paste0(' - [', x, '](', URLencode(x), ')'))
+  
+  # tweaky sort
+  links <- gsub('-', '~', links, fixed=TRUE)
+  links <- sort(links)
+  links <- gsub('~', '-', links, fixed=TRUE)
+  
+  index <- paste0('# index\n\n', paste0(links, collapse='\n'))
+  
+  writeLines(index, 'index.Rmd')
+  
+  rmarkdown::render(
+    input='index.Rmd',
+    output_file='index.html')
+  
+}
 
-# tweaky sort
-links <- gsub('-', '~', links, fixed=TRUE)
-links <- sort(links)
-links <- gsub('~', '-', links, fixed=TRUE)
-
-index <- paste0('# index\n\n', paste0(links, collapse='\n'))
-
-writeLines(index, 'index.Rmd')
-
-rmarkdown::render(
-  input='index.Rmd',
-  output_file='index.html')
