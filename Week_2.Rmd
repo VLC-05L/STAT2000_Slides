@@ -1,10 +1,11 @@
 ---
 title: "STAT2000: Applied Statistics and Research Methods"
-subtitle: 'Week 2 - Research Methods and Study Design'
+subtitle: <h2> Week 2 - Research Methods and Study Design </h2>
 author: Glen Livingston Jr
 date: Semester 1, 2020
 output: 
   revealjs::revealjs_presentation:
+    css: reveal.css
 #    self_contained: false
 #    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
 #    reveal_options:
