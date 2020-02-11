@@ -5,7 +5,7 @@ date: Semester 1, 2020
 output: 
   revealjs::revealjs_presentation:
 #    self_contained: false
-#    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
+    reveal_plugins: ["search", "zoom", "notes", "chalkboard", "menu"]
 #    reveal_options:
 #      chalkboard: 
 #        theme: chalkboard

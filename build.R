@@ -25,6 +25,7 @@ for (Rmd in Rmds) {
 
   rmarkdown::render(
     input=Rmd,
+#    output_format='html_document',
     output_file=output_L)
 
 }
