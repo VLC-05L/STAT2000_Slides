@@ -19,15 +19,20 @@ Rmds <- list.files(pattern='.*\\.Rmd')
 
 #Rmd = Rmds[1]
 for (Rmd in Rmds) {
+  print("LOOP-START")
+  
   match <- regexec('^(.*)\\.Rmd$', Rmd)
   name <- substring(Rmd, 1, nchar(Rmd)-4)
   output_L <- paste(name, '_Lecture.html',sep="")
 
+  print("LOOP-MID")
+  
   rmarkdown::render(
     input=Rmd,
 #    output_format='html_document',
     output_file=output_L)
 
+  print("LOOP-END")
 }
 
 if(1==0){
