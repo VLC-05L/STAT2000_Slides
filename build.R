@@ -1,3 +1,4 @@
+# setwd("C:/Users/glj542/Google Drive/STAT2000_Materials/STAT2000_Slides")
 # rm(list = ls())
 
 local({
