@@ -89,7 +89,7 @@ office: SR-115
 
 ## Hypothesis Testing – The Concept
 
-$\color{red}{INCREASE \ GAP}$
+$\color{red}{INCREASE \  GAP}$
 
 > - We have a belief or something we wish to test 
 >     - a difference exists between males' and females' mean reaction times  
