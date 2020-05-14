@@ -13,6 +13,26 @@ output:
     countIncrementalSlides: false
 ---
 
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+if ( ! require('haven'))
+  install.packages('haven')
+if ( ! require('car'))
+  install.packages('car')
+if ( ! require(tibble))
+  install.packages('tibble')
+if ( ! require(kableExtra))
+  install.packages('kableExtra')
+
+loadNamespace('haven')
+loadNamespace('car')
+loadNamespace('tibble')
+loadNamespace('kableExtra')
+
+```
+
+
 # test
 
 ---

@@ -11,6 +11,7 @@ if ( ! require(rmarkdown))
 if ( ! require(xaringan))
   install.packages('xaringan')
 
+
 # Loop for builds
 #Rmds <- list.files(pattern='.*\\.Rmd')
 Rmds <- list.files(pattern='Lecture_.*\\.Rmd')
