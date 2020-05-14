@@ -1,5 +1,3 @@
-# setwd("C:/Users/glj542/Google Drive/STAT2000_Materials/STAT2000_Slides")
-# rm(list = ls())
 
 local({
   # set a stable mirror
@@ -11,43 +9,42 @@ local({
 if ( ! require(rmarkdown))
   install.packages('rmarkdown')
 
-if ( ! require(revealjs))
-  install.packages("revealjs")
+# Loop for builds
+#Rmds <- list.files(pattern='.*\\.Rmd')
+Rmds <- list.files(pattern='Lecture_.*\\.Rmd')
+Rmd_index = 1:length(Rmds)
 
-
-Rmds <- list.files(pattern='.*\\.Rmd')
-
-#Rmd = Rmds[1]
-for (Rmd in Rmds) {
-
+i=1
+for (i in 1:length(Rmds)) {
+  Rmd = Rmds[i]
   match <- regexec('^(.*)\\.Rmd$', Rmd)
   name <- substring(Rmd, 1, nchar(Rmd)-4)
-  output_L <- paste(name, '_Lecture.html',sep="")
-
+  output_q <- paste(name, '.html', sep="")
+  
   rmarkdown::render(
     input=Rmd,
-#    output_format='html_document',
-    output_file=output_L)
+    output_format='xaringan::moon_reader',
+    css = c("default", "chocolate"),
+    output_file=output_q,
+    params=list(inc_solu=FALSE))
 
 }
 
-if(1==1){
-  files <- list.files(pattern='Lecture.html*.*')
-  files <- c(files, 'all.zip')
-  links <- sapply(files, function(x) paste0(' - [', x, '](', URLencode(x), ')'))
-  
-  # tweaky sort
-  links <- gsub('-', '~', links, fixed=TRUE)
-  links <- sort(links)
-  links <- gsub('~', '-', links, fixed=TRUE)
-  
-  index <- paste0('# index\n\n', paste0(links, collapse='\n'))
-  
-  writeLines(index, 'index.Rmd')
-  
-  rmarkdown::render(
-    input='index.Rmd',
-    output_file='index.html')
-  
-}
+# Files for an index - still based on lab, would need updating
+#files <- list.files(pattern='Lab*.*')
+#files <- c(files, 'all.zip')
+#links <- sapply(files, function(x) paste0(' - [', x, '](', URLencode(x), ')'))
 
+# tweaky sort
+#links <- gsub('-', '~', links, fixed=TRUE)
+#links <- sort(links)
+#links <- gsub('~', '-', links, fixed=TRUE)
+
+#index <- paste0('# index\n\n', paste0(links, collapse='\n'))
+
+#writeLines(index, 'index.Rmd')
+
+#rmarkdown::render(
+#  input='index.Rmd',
+#  output_format='html_document',
+#  output_file='index.html')

@@ -1,0 +1,34 @@
+---
+title: ' STAT2000 - Applied Statistics and Research MethodsLecture 2 ? 2020 '
+author: Glen Livingston Jr
+date: 2020-05-14
+output:
+  revealjs::revealjs_presentation
+---
+
+# test
+
+---
+##  Type I: Rejecting H0, when H0 is actually true! 
+
+
+Type II: Failing to reject H 0 , when H 0 is actually false!
+
+There are two types of errors that can be made? and we assign probabilities.
++ Revision: Type I and II errors
+
+**Decision**
+
+(Power = 1 ? )
+
+Type I error is when we: *Incorrectly Reject H* *0*
+
+Type II error is when we: *Incorrectly NOT Reject H* *0*
+
+OR
+
+OR
+
+Power is about your ability to:
+
+

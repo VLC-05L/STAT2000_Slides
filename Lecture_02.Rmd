@@ -1,0 +1,28 @@
+---
+title: ' STAT2000 - Applied Statistics and Research Methods '
+subtitle: 'Lecture 2 - 2020'
+author: Glen Livingston Jr
+date: 2020-05-14
+output:
+  xaringan::moon_reader:
+    css: [default, chocolate, chocolate-fonts, font_colours.css]
+  lib_dir: libs
+  nature:
+    highlightStyle: github
+    highlightLines: true
+    countIncrementalSlides: false
+---
+
+# testing this tyhing!!!
+
+Hey you!
+
+![](v.svg)
+
+
+![](r.svg)
+
+---
+
+
+

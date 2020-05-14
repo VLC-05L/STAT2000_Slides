@@ -1,0 +1,221 @@
+---
+title: ' STAT2000 - Applied Statistics and Research Methods '
+subtitle: 'Lecture 2 - 2020'
+author: Glen Livingston Jr
+date: 2020-05-14
+output:
+  xaringan::moon_reader:
+    css: [default, chocolate, chocolate-fonts, font_colours.css]
+  lib_dir: libs
+  nature:
+    highlightStyle: github
+    highlightLines: true
+    countIncrementalSlides: false
+---
+
+# test
+
+---
+##  Type I: Rejecting H0, when H0 is actually true! 
+
+
+Type II: Failing to reject H 0 , when H 0 is actually false!
+
+There are two types of errors that can be made? and we assign probabilities.
++ Revision: Type I and II errors
+
+**Decision**
+
+(Power = 1 ? )
+
+.blue[Power]
+
+.red[Power]
+
+.orange[Power]
+
+.purple[Power]
+
+.green[Power]
+
+.yellow[Power]
+
+
+Type I error is when we: *Incorrectly Reject H* *0*
+
+Type II error is when we: *Incorrectly NOT Reject H* *0*
+
+OR
+
+OR
+
+Power is about your ability to:
+
+Correctly Reject H 0
+
+```{r tbl2, echo = FALSE}
+tbl2 <- tibble::tribble(
+~` `, ~`True`, ~`Situation`,
+" ","H 0 True","H 0 False",
+"H 0 Rejected","Type I Error","Correct Decision",
+" "," "," ",
+"H 0 Not Rejected","Correct Decision","Type II error",
+" "," "," "
+)
+
+kableExtra::kable_styling(knitr::kable(tbl2), font_size = 18)
+```
+
+
+---
+
+
+High Power is Desirable . But it depends on four aspects:
++ Revision: Power of a Hypothesis test
+
+```{r tbl3, echo = FALSE}
+tbl3 <- tibble::tribble(
+~`Size of ?difference? to detect`, ~`?distance? between value of parameter under null hypothesis and the true value of the parameter. greater distance           greater the power.`,
+"Population Standard Deviation/s","- smaller population standard deviation leads to greater power of the test.",
+"Sample size/s","- larger sample sizes leads to greater power of the test.",
+"Significance level","- a larger level of significance leads to greater power of the test ( BUT ALSO THE GREATER THE CHANCE OF A TYPE I ERROR )."
+)
+
+kableExtra::kable_styling(knitr::kable(tbl3), font_size = 18)
+```
+
+---
+
+#   Advantages of Questionnaires 
+
++ Helps researcher obtain data relatively easily (time, cost, effort).
++ Information easily coded (analyses determined *a priori* ).
++ Benefits scientific community if measures are valid and reliable
+	+ Ambiguity and poor measurement practices thwart this.
++ **When to Use a Questionnaire**
++ When large numbers of people are to be reached in different geographical regions.
++ When groups of people can be assembled in a convenient location to whom questionnaires can be administered, and collected immediately.
++ A questionnaire i s a pre-formulated written set of questions to which respondents record their answers
++ Questionnaire
+
+
+---
+#  Principles of wordingPrinciples of measurementGeneral appearanceQuestionnaire administration and testing 
+
++ *"... poorly designed and executed ... surveys are a form of censorship of the respondents' views"*
++ (Draper and Hill, 1996).
++ Statistical analyses cannot be better than the quality of the data. Important to have valid and reliable measurement procedures . . . .   . . . else the study only suitable for an autopsy.
+
+Poor quality data from poor designs and collection techniques will lead to poor experimental outcomes and useless conclusions for the objectives of the study.
++ Principles of Questionnaire design
+![](assets/img/image10.png)
+
+
+---
+#  Statistics is about making inference about a population without needing to collect data from all elements of the population  
+
+
+Population
+
+**<U+F06D>, <U+F073>, <U+F073>** **2** **, <U+F070>  (parameters)**
+
+**Estimate**
+
+Sample
+
+X
+
+X
+
+X
+
+X
+
+X
+
+X
++ Inference: sampling
+
+**, s, s** **2** **, p  (statistics)**
+
+
+
+
+---
+#  Simple Random Sampling 
+
++ Ensures every element in the sampling frame has an **equal chance** of being selected.
++ Is the most **representative** of the population for most purposes.
++ Probability Sampling
++ **Systematic Sampling**
++ E very n th element in the population starting with a randomly chosen element.
++ Don?t need to specify total sampling frame or number all items.
++ Example :
+	+ (Consumer behaviour) Supermarket studying purchasing preferences of customers, they can choose every 5 th customer entering the supermarket and conduct the survey.
+.pull-left[![](assets/img/image12.png)]
+
+.pull-right[![](assets/img/image13.png)]
+
+
+---
+#  Stratified Random Sampling 
+
+#  Probability Sampling 
+
++ Sampling from **mutually exclusive sub-populations** , or strata, from the population
+	+ attitudes towards Blackboard: students divided into 1 st , 2 nd , 3 rd years.
+	+ employee morale: employees stratified into clerks, supervisors, managers, etc.
+	+ clinical trials: patients stratified by gender.
++ ***Homogeneity*** ** within each strata ** and **heterogeneity** 
+
+between strata.
++ Eg. Managers act similarly to other managers, but different to tradesman.
++ **Simple random sampling** used on each strata.
++ Cluster Sampling
++ Dividing the population into non-overlapping areas or clusters where there is *heterogeneity within clusters.*
+	+ E.g., test effects of information programme on school children: test in certain schools.
++ Entire cluster used. Clusters selected using **simple random sampling** .
+.pull-left[![](assets/img/image14.jpeg)]
+
+.pull-right[![](assets/img/image15.png)]
+
+---
+#  Choice Points in Sampling Design 
+
++ Non-Probability Sampling
+![](assets/img/image17.jpeg)
+
+
+---
+
+[https://www.alswh.org.au/about](https://www.alswh.org.au/about)
+
+
+---
+#  Randomisation:	- randomly assigning subjects to treatment groups.		- randomly assigning the order.  
+
+
+*Replication* :	- repeating the experiment over **many subjects** .
+
+- provides better estimates; reduces SE of estimate (mean).
+
+(Not  ?Reading, wRiting and aRithmetic , but ? )
++ *Replication*
++ *Blocking* ******
++ *Randomisation*
+
+***Source: Howley (JSE, 2003)***
++ Experimental Design: The Three R?s
+
+*Blocking* : 	- If a factor is of ***no interest*** to the prediction of the outcome 			variable, *but is* ***known to influence*** **** the values of the outcome 		variable, *Y* , then it is better to randomise within blocks ( eg , gender 		on drug effectiveness).
+
+**Why?** It controls for a source of variation in *Y* , thus SE of the 			estimated means will be reduced.
+
+
+![](assets/img/image23.png)
+[https://en.wikipedia.org/wiki/Unethical_human_experimentation](https://en.wikipedia.org/wiki/Unethical_human_experimentation)
+
+
+---
+
+
