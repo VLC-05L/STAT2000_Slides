@@ -25,6 +25,9 @@ artifacts:
     name: zip files
   - path: '*.jpg'
     name: jpg files
+  - path: '*.css'
+    name: css files
+
 
 deploy:
     provider: S3

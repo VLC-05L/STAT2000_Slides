@@ -17,10 +17,16 @@ output:
 
 Hey you!
 
+
+ Below is the Jamovi .green[symbol]. 
+ 
 ![](v.svg)
 
+Below is the R .red[symbol]!
 
 ![](r.svg)
+
+dfdsfsd
 
 ---
 
