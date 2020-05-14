@@ -8,6 +8,8 @@ local({
 
 if ( ! require(rmarkdown))
   install.packages('rmarkdown')
+if ( ! require(xaringan))
+  install.packages('xaringan')
 
 # Loop for builds
 #Rmds <- list.files(pattern='.*\\.Rmd')
