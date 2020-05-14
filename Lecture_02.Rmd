@@ -24,11 +24,23 @@ Hey you!
 
 Below is the R .red[symbol]!
 
-![](r.svg)
+![](R.svg)
 
 dfdsfsd
 
 ---
 
+# testing ng!!!
 
+
+i .green[symbol]. 
+ 
+
+Below is the R .red[symbol]!
+
+![](r.svg)
+
+dfdsfsd
+
+---
 
