@@ -24,7 +24,6 @@ for (i in 1:length(Rmds)) {
   rmarkdown::render(
     input=Rmd,
     output_format='xaringan::moon_reader',
-    css = c("default", "chocolate"),
     output_file=output_q,
     params=list(inc_solu=FALSE))
 
