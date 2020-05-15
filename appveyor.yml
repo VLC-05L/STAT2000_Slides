@@ -8,7 +8,7 @@ install:
 
 build_script:
   - Rscript build.R
-  - '7z a -tzip all.zip *.html *.sav *.Rmd *.svg *.png *.zip *.css .\*'
+  - '7z a -tzip all.zip .\*'
 
 artifacts:
   - path: '*.html'
