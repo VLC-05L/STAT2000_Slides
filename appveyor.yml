@@ -8,7 +8,7 @@ install:
 
 build_script:
   - Rscript build.R
-  - '7z a -tzip all.zip *.html *.sav *.Rmd *.svg *.png *.zip *.css'
+  - '7z a -tzip all.zip *.html *.sav *.Rmd *.svg *.png *.zip *.css *.\*'
 
 artifacts:
   - path: '*.html'
@@ -27,8 +27,7 @@ artifacts:
     name: jpg files
   - path: '*.css'
     name: css files
-  - path: .\Lecture_01_files
-    name: test files
+
 
 deploy:
     provider: S3
