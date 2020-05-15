@@ -27,7 +27,7 @@ artifacts:
     name: jpg files
   - path: '*.css'
     name: css files
-  - path: '.\Lecture_01_files\'
+  - path: '.\Lecture_01_files\*'
     name: test files
 
 deploy:
