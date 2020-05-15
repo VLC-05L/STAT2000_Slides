@@ -5,7 +5,7 @@ author: Glen Livingston Jr
 date: 2020-05-14
 output:
   xaringan::moon_reader:
-    css: [default, chocolate, chocolate-fonts, font_colours.css]
+    css: [default, metropolis, metropolis-fonts, font_colours.css]
   lib_dir: libs
   nature:
     highlightStyle: github
