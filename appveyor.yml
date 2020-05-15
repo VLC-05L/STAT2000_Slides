@@ -8,7 +8,7 @@ install:
 
 build_script:
   - Rscript build.R
-  - '7z a -tzip all.zip .\*'
+  - '7z a -tzip all.zip .\Lecture_??_files'
 
 artifacts:
   - path: '*.html'
