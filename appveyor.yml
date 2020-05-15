@@ -36,6 +36,7 @@ deploy:
         secure: HEhOfs5oEuCU4xgi/Wx7fv5UCktGQyG9zoRqYGcObKI=
     secret_access_key:
         secure: Cl+DccBdfvPAQpuzOzHlkbBF6tNqW7/eSOMKlW8r/zyWt3S0eYvL0h/Poar4DbyI
+    unzip: true
     bucket: uon-stat2000-lectures
     region: us-east-2
     set_public: true
