@@ -1,14 +1,12 @@
 
-STAT2000 Lab Materials
+STAT2000 Lecture Materials
 ======================
 
-These documents were created by Glen Livingston Jr and Jonathon Love. They contain new content
-as well as content that existed in previous offerings of STAT2000. 
+These documents were created by Glen Livingston Jr. They are based on previous STAT2000 
+lecture slides with additional content written by Glen.  
 
- - Built [here](https://ci.appveyor.com/project/VLC/stat2000-labs)
- - Viewable [here](http://uon-stat2000-labs.s3-website-us-east-2.amazonaws.com/)
+ - Built [here](https://ci.appveyor.com/project/VLC/stat2000-lectures)
+ - Viewable [here](http://uon-stat2000-lectures.s3-website-us-east-2.amazonaws.com/)
 
 Improvements to be made: 
-	1. Remove common elements to all labs and add to single document to be called. 
-	   Eg. date = "Semester 1, 2021" - This will only need to be updated in one spot then. 
-    2. Add build date and time to document. 
+	1. Will add when I think of them...
