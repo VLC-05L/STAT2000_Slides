@@ -13,8 +13,12 @@ if ( ! require(xaringan))
 
 
 # Loop for builds
-#Rmds <- list.files(pattern='.*\\.Rmd')
-Rmds <- list.files(pattern='Lecture_.*\\.Rmd')
+Rmds = NULL
+for (i in 1:12){
+  path.i = paste0("./Week_",if(nchar(x = toString(i))==1)paste0("0",i) else toString(i),"_2020")
+  Rmds[i] = list.files(path = path.i, pattern='Week_.*_2020.Rmd')
+}
+
 Rmd_index = 1:length(Rmds)
 
 i=1
